@@ -15,12 +15,9 @@ function convertToRoman(num) {
         I : 1,
     };
 
-    // let - escopo de bloco
-    // var - global
     let result = '';
 
     for(const n in arr){
-        
         while (num >= arr[n]){
             result += n;
             num -= arr[n];
@@ -29,10 +26,5 @@ function convertToRoman(num) {
 
     return result;
 }
-
-console.log(convertToRoman(2)); 
-console.log(convertToRoman(3)); 
-console.log(convertToRoman(4)); 
-console.log(convertToRoman(5)); 
 
 convertToRoman(36);
